@@ -19,7 +19,7 @@ lib64/
 parts/
 sdist/
 var/
-var/core/settings.py
+src/core/settings.py
 wheels/
 share/python-wheels/
 *.egg-info/
