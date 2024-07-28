@@ -36,13 +36,13 @@ DJANGO_APPS = [
 EXTERNAL_APPS = [
     'debug_toolbar',
     'jazzmin',
-    'ckeditor',
+    'django_ckeditor_5',
     'django_celery_beat',
 ]
 
 OWN_APPS = [
-    'user',
-    'warehouse',
+    # 'user',
+    # 'warehouse',
 ]
 INSTALLED_APPS = EXTERNAL_APPS + OWN_APPS + DJANGO_APPS
 

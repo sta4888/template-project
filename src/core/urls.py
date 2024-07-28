@@ -5,10 +5,13 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('warehouse.urls', namespace="warehouse")),
-    path('user/', include('user.urls', namespace="user")),
-    path('ckeditor/', include('ckeditor_uploader.urls')),
+    # path('', include('warehouse.urls', namespace="warehouse")),
+    # path('user/', include('user.urls', namespace="user")),
 ]
+
+urlpatterns += [
+    path("ckeditor5/", include('django_ckeditor_5.urls')),
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
