@@ -33,7 +33,7 @@
     This command should be run from the root directory where `Dockerfile` is located.
     You also need to build the docker container again in case if you have updated `requirements.txt`.
    
-3. Now it is possible to run the project inside the Docker container:
+3. Теперь проект можно запускать внутри Docker-контейнера.:
     ```shell
     docker compose up
     ```
