@@ -40,8 +40,7 @@ EXTERNAL_APPS = [
 ]
 
 OWN_APPS = [
-    # 'user',
-    # 'warehouse',
+
 ]
 INSTALLED_APPS = EXTERNAL_APPS + OWN_APPS + DJANGO_APPS
 
