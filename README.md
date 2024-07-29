@@ -44,7 +44,7 @@
     ```shell
     docker compose exec app bash
     ```
-   Apply migrations to create tables in the database:
+   Примените миграции для создания таблиц в базе данных:
     ```shell
     ./manage.py migrate
     ```
