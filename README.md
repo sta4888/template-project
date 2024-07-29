@@ -37,17 +37,18 @@
     ```shell
     docker compose up
     ```
-   When containers are up server starts at [http://0.0.0.0:8000](http://0.0.0.0:8000). Вы можете открыть его в своем браузере.
+   Когда контейнеры запущены, сервер запускается в [http://0.0.0.0:8000](http://0.0.0.0:8000). Вы можете открыть его в своем браузере.
 
 4. To run application correctly set up the database using commands:
     Connect to the application Docker-container:
     ```shell
     docker compose exec app bash
     ```
-   Примените миграции для создания таблиц в базе данных:
+   Apply migrations to create tables in the database:
     ```shell
     ./manage.py migrate
     ```
+что то еще
 
 
 
