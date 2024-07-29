@@ -30,7 +30,7 @@
     ```shell
     docker compose build
     ```
-    Эту команду следует запускать из корневого каталога, где `Dockerfile` is located.
+    Эту команду следует запускать из корневого каталога, где `Dockerfile` расположен.
     You also need to build the docker container again in case if you have updated `requirements.txt`.
    
 3. Теперь проект можно запускать внутри Docker-контейнера.:
