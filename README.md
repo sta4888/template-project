@@ -37,7 +37,7 @@
     ```shell
     docker compose up
     ```
-   When containers are up server starts at [http://0.0.0.0:8000](http://0.0.0.0:8000). You can open it in your browser.
+   Когда контейнеры запущены, сервер запускается в [http://0.0.0.0:8000](http://0.0.0.0:8000). You can open it in your browser.
 
 4. To run application correctly set up the database using commands:
     Connect to the application Docker-container:
