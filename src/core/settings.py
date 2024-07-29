@@ -19,7 +19,6 @@ SECRET_KEY = env("SECRET_KEY")
 DEBUG = True
 
 ALLOWED_HOSTS = env("ALLOWED_HOSTS", list)
-# ALLOWED_HOSTS = []
 
 # Application definition
 
@@ -41,8 +40,7 @@ EXTERNAL_APPS = [
 ]
 
 OWN_APPS = [
-    # 'user',
-    # 'warehouse',
+
 ]
 INSTALLED_APPS = EXTERNAL_APPS + OWN_APPS + DJANGO_APPS
 

@@ -26,7 +26,7 @@
     Образец файла (`.env.sample`) содержит набор переменных со значениями по умолчанию. 
     Таким образом, его можно настроить в зависимости от среды..
 
-2. Build the container using Docker Compose:
+2. Создайте контейнер с помощью Docker Compose.:
     ```shell
     docker compose build
     ```
