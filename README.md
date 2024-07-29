@@ -48,3 +48,4 @@
     ```shell
     ./manage.py migrate
     ```
+что то еще
