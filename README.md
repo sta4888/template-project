@@ -22,7 +22,7 @@
     cp .env.sample .env
     ```
    
-    This file contains environment variables that will share their values across the application.
+    Этот файл содержит переменные среды, значения которых будут использоваться во всем приложении.
     The sample file (`.env.sample`) contains a set of variables with default values. 
     So it can be configured depending on the environment.
 
