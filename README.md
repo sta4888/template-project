@@ -24,7 +24,7 @@
    
     Этот файл содержит переменные среды, значения которых будут использоваться во всем приложении.
     Образец файла (`.env.sample`) содержит набор переменных со значениями по умолчанию. 
-    So it can be configured depending on the environment.
+    Таким образом, его можно настроить в зависимости от среды..
 
 2. Создайте контейнер с помощью Docker Compose.:
     ```shell
@@ -33,7 +33,7 @@
     This command should be run from the root directory where `Dockerfile` is located.
     You also need to build the docker container again in case if you have updated `requirements.txt`.
    
-3. Now it is possible to run the project inside the Docker container:
+3. Теперь проект можно запускать внутри Docker-контейнера.:
     ```shell
     docker compose up
     ```
