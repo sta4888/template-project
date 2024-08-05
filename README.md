@@ -22,22 +22,22 @@
     cp .env.sample .env
     ```
    
-    This file contains environment variables that will share their values across the application.
-    The sample file (`.env.sample`) contains a set of variables with default values. 
-    So it can be configured depending on the environment.
+    Этот файл содержит переменные среды, значения которых будут использоваться во всем приложении.
+    Образец файла (`.env.sample`) содержит набор переменных со значениями по умолчанию. 
+    Таким образом, его можно настроить в зависимости от среды..
 
-2. Build the container using Docker Compose:
+2. Создайте контейнер с помощью Docker Compose.:
     ```shell
     docker compose build
     ```
-    This command should be run from the root directory where `Dockerfile` is located.
+    Эту команду следует запускать из корневого каталога, где `Dockerfile` расположен.
     You also need to build the docker container again in case if you have updated `requirements.txt`.
    
-3. Now it is possible to run the project inside the Docker container:
+3. Теперь проект можно запускать внутри Docker-контейнера.:
     ```shell
     docker compose up
     ```
-   When containers are up server starts at [http://0.0.0.0:8000](http://0.0.0.0:8000). You can open it in your browser.
+   Когда контейнеры запущены, сервер запускается в [http://0.0.0.0:8000](http://0.0.0.0:8000). Вы можете открыть его в своем браузере.
 
 4. To run application correctly set up the database using commands:
     Connect to the application Docker-container:
@@ -48,3 +48,8 @@
     ```shell
     ./manage.py migrate
     ```
+что то еще
+
+
+
+что то 
