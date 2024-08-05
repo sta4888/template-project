@@ -3,7 +3,7 @@ from pathlib import Path
 import environ
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve().parent.parent.parent
 ROOT_DIR = environ.Path(__file__) - 4
 env = environ.Env()
 
@@ -15,8 +15,8 @@ env.read_env(ROOT_DIR(".env"))
 SECRET_KEY = env("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = env("DEBUG", bool)
-DEBUG = True
+DEBUG = env("DEBUG", bool)
+# DEBUG = True
 
 ALLOWED_HOSTS = env("ALLOWED_HOSTS", list)
 
@@ -70,7 +70,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'core.context_processors.main_processor',
+                # 'core.context_processors.main_processor',
             ],
         },
     },
@@ -117,16 +117,17 @@ USE_TZ = True
 
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
+    os.path.join(os.path.join(ROOT_DIR, 'src'), 'static'),
 ]
+
+print(f"--STATICFILES_DIRS {STATICFILES_DIRS}")
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-
+STATIC_ROOT = os.path.join(os.path.join(ROOT_DIR, 'src'), 'staticfiles')
 MEDIA_URL = '/media/'
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_ROOT = os.path.join(os.path.join(ROOT_DIR, 'src'), 'media')
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
@@ -169,17 +170,17 @@ CKEDITOR_CONFIGS = {
 }
 
 JAZZMIN_SETTINGS = {
-    "site_title": "OverVoltage",
-    "site_header": "OverVoltage",
-    "site_brand": "OverVoltage",
+    "site_title": "Demo",
+    "site_header": "Demo",
+    "site_brand": "Demo",
     "site_icon": "admin_login.png",
     "login_logo": "admin_login.png",
     # Add your own branding here
     "site_logo": "admin_login.png",
-    "welcome_sign": "Добро пожаловать на OverVoltage",
+    "welcome_sign": "Добро пожаловать на Demo",
     "site_logo_classes": "img",
     # Copyright on the footer
-    "copyright": "OverVoltage",
+    "copyright": "Demo",
     "user_avatar": None,
     ############
     # Top Menu #
@@ -187,7 +188,7 @@ JAZZMIN_SETTINGS = {
     # Links to put along the top menu
     "topmenu_links": [
         # Url that gets reversed (Permissions can be added)
-        {"name": "OverVoltage", "url": "home", "permissions": ["auth.view_user"]},
+        {"name": "Demo", "url": "home", "permissions": ["auth.view_user"]},
         # model admin to link to (Permissions checked against model)
         {"model": "auth.User"},
     ],
