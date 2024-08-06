@@ -7,7 +7,12 @@
 по настройке settings.py мы возьмем статью 
 
 
-
+### SECRET_KEY
+генерация секретного ключа 
+```python
+from django.core.management.utils import get_random_secret_key
+print(get_random_secret_key())
+```
 
 
 https://demoqa.com/
