@@ -42,6 +42,7 @@ EXTERNAL_APPS = [
 OWN_APPS = [
     'fapp',
     'useri',
+    'elibrary_app',
 ]
 INSTALLED_APPS = EXTERNAL_APPS + OWN_APPS + DJANGO_APPS
 
@@ -57,6 +58,9 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'core.urls'
+
+
+AUTH_USER_MODEL = 'useri.CustomUser'
 
 TEMPLATES = [
     {
