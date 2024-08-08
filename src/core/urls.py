@@ -7,6 +7,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('fapp.urls', namespace="fapp")),
     path('user/', include('useri.urls', namespace='user')),
+    path('elib/', include('elibrary_app.urls', namespace='elib')),
 ]
 
 urlpatterns += [

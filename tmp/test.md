@@ -53,3 +53,12 @@
 
 ```assertFalse``` - это утверждение проверяет, утверждает ли рассматриваемый операнд значение False 
 
+
+тестирование отдельного модуля
+```shell
+python manage.py test elibrary_app.tests.test_models
+```
+
+```shell
+python manage.py test elibrary_app.tests.test_urls.ElibraryURLsTest.test_homepage_url_name
+```
