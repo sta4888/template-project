@@ -5,7 +5,7 @@ from django.urls.base import resolve
 from ..views import home
 
 
-class ElibraryURLsTest(SimpleTestCase):
+class ElibraryURLsTest(TestCase):
     """ Тестируем URLs """
 
     def test_homepage_url_name(self):

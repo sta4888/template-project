@@ -1,7 +1,9 @@
 from django.test import TestCase, SimpleTestCase
+from django.urls import reverse
+from ..forms import AddBookForm
 
 
-class CatalogFormTests(SimpleTestCase):
+class CatalogFormTests(TestCase):
     """ Тесты для форм """
 
     def setUp(self):

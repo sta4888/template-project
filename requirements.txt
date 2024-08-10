@@ -44,3 +44,6 @@ psycopg2-binary==2.9.5
 coverage
 
 django-debug-toolbar==3.7.0
+
+
+selenium
